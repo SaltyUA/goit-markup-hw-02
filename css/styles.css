@@ -16,6 +16,7 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--white-background-color);
+  color: var(--text-color);
 }
 
 .link {
@@ -28,7 +29,7 @@ body {
 
 /* ----------------------------HEADER-------------------------------------- */
 
-.header-logo-text1 {
+.header-logo {
   width: 44px;
   height: 21px;
   font-family: "Raleway", sans-serif;
@@ -43,7 +44,7 @@ body {
   color: var(--primary-brand-color);
 }
 
-.header-logo-text2 {
+.header-studio {
   width: 71px;
   height: 21px;
   font-family: "Raleway", sans-serif;
@@ -58,7 +59,7 @@ body {
   color: var(--dark-color);
 }
 
-.header-item {
+.header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -66,14 +67,28 @@ body {
   color: var(--dark-color);
 }
 
-.address-text {
+.header-link:is(:hover, :focus) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--pressed-state-color);
+}
+
+.header-address {
   font-style: normal;
+}
+
+.address-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
 
+.address-link:is(:hover, :focus) {
+  color: var(--pressed-state-color);
+}
 /* ----------------------------HERO-------------------------------------- */
 
 .hero {
@@ -96,8 +111,15 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+  color: var(--white-background-color);
   cursor: pointer;
   background-color: var(--primary-brand-color);
+}
+
+.hero-btn:is(:hover, :focus) {
+  background: var(--pressed-state-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* ----------------------------FEATURES-------------------------------------- */
@@ -114,7 +136,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 
 /* ----------------------------PRODUCTS-------------------------------------- */
@@ -130,6 +151,13 @@ body {
 
 /* ----------------------------TEAM-------------------------------------- */
 
+.team {
+  background-color: var(--light-color);
+}
+
+.team-item {
+  background-color: var(--white-background-color);
+}
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -152,7 +180,6 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 
 /* ----------------------------FOOTER-------------------------------------- */
@@ -167,7 +194,7 @@ body {
   color: var(--light-color);
 }
 
-.footer-logo-text1 {
+.footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -179,7 +206,7 @@ body {
   color: var(--primary-brand-color);
 }
 
-.footer-logo-text2 {
+.footer-studio {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -211,6 +238,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
+  cursor: pointer;
 }
 .filters-btn:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
@@ -234,5 +262,4 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
